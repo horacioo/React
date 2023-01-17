@@ -1,0 +1,5 @@
+@mixin grid(){
+    /********#layout******************************/
+    /***Controle de posição elementos do layout***/
+    grid-template-areas: ". . . . ." ;   
+}

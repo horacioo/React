@@ -1,0 +1,172 @@
+@import '_layOutGrid';
+
+
+
+
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+@mixin all(){
+
+    button{
+        position: fixed;
+        bottom: 0;
+        padding: 0.7vw;
+        font-size: 1vw;
+        color:$cor_base;
+        background-color: lighten($CorInversa, 60);
+        border:none !important;
+        border-top-right-radius: 0.5vw;
+        padding-right: 1.7vw;
+        &:hover { color:white;  background-color: lighten($cor_base, 30);}
+    }
+
+
+    #formularioCompleto{  
+        border:none!important;
+        .linha{ border:0px solid rgb(209, 209, 209);  }
+        .linha{           
+                /****************************************************************/
+                /****************************************************************/
+                /****************************************************************/
+                /****************************************************************/
+                .Masculino{@include DecoracaoDasLinhas(hsl(192, 100%, 8%)) }
+                .Feminino{@include DecoracaoDasLinhas(hsl(323, 100%, 19%)) }
+                .All{ @include DecoracaoDasLinhas($complementar1)  }
+                /****************************************************************/
+                /****************************************************************/
+                /****************************************************************/
+                /****************************************************************/
+
+            }
+
+
+    }
+}
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/****aqui eu coloco as cores dos "sub-grupos" ******/
+@mixin SepararPorGrupos(){
+     position: relative;
+     overflow: auto;
+     height: auto;
+     padding:0;
+    .All{ background-color:hsl(171, 100%, 95%); @include posicao();}    
+    .Feminino{ background-color:hsl(309, 100%, 95%); @include posicao(); }  
+    .Masculino{ background-color:hsl(204, 88%, 86%); @include posicao();} 
+}
+
+
+@mixin posicao(){
+    height: 100%; 
+    width: 100%; 
+    position:relative; 
+    left:0; 
+    top:0px;
+    h2{ margin: 0;}
+}
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+
+
+@keyframes MudandoDeCor {
+    0% {background-color: White;}
+    100% {  background-color: $cor_base; border:1px solid $CorInversa;   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin DecoracaoDasLinhas($cor){
+    background-color: lighten($cor, 78);
+    margin-bottom: 0.4vw;
+    border:1px solid $cor_base;
+    padding: 0.7vw;
+    h2{
+        margin:0.4vw; text-transform: capitalize; color:$cor_base; display: inline-block; font-size:0.9vw;
+        &::after{content: ':';}
+    }
+    
+    
+    label{ 
+            font-size:0.8vw;
+            border:orange 0px solid; 
+            padding:0.2vw; margin:0.2vw; 
+            display: inline-block; 
+            text-transform: capitalize;
+            color:$cor_base;
+            border:0px solid red;
+            margin-bottom: 0.4vw;
+            
+
+
+            input[type="checkbox"],input[type="text"],input[type="date"], select{
+                    border:1px solid $cor_base;
+                    margin-left: 0.2vw;
+                    padding: 0.2vw;
+                    color:$cor_base;
+                }
+            input[type="checkbox"]{
+                margin-left: 0.4vw;
+                &:checked::after
+                {
+                    content: '';
+                    display: block;
+                    border:1px solid $cor_base;
+                    background-color:$cor_base;
+                    width: 1.4vw!important;
+                    height: 1.4vw;
+                    border-radius: 1vw;
+                    top:-3px;
+                    left: -4px;
+                    position: relative;
+                    animation: MudandoDeCor 500ms forwards;
+                }
+                &:after{
+                    content: '';
+                    display: block;
+                    border:1px solid $cor_base;
+                    background-color:white;
+                    width: 1.4vw!important;
+                    height: 1.4vw;
+                    border-radius: 1vw;
+                    top:-3px;
+                    left: -4px;
+                    position: relative;
+                    }
+            }    
+        }
+}

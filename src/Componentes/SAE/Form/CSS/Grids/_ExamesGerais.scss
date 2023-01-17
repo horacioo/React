@@ -1,0 +1,58 @@
+
+
+@mixin ExamesGerais(){
+    .grid_ZXhhbWVz{
+                    
+            font-size: 12px;
+            padding-top:20px;
+            h2{ 
+                grid-area: titulo;
+                @include MinhaFonte();
+                position: relative;
+                top:0;
+                margin: 0;
+                text-align: right;
+                padding-right: 0.9vw;
+                font-weight: bolder!important;
+            }
+    
+    
+    
+            .bloco{
+            @include MinhaFonte();
+            width: 100%;
+            
+            display: grid;
+            grid-template-columns:repeat(11,fr) ; /****9 colunas*****/
+            grid-template-rows: auto;
+            grid-gap: 0.2vw;
+                        
+            grid-template-areas:
+            "titulo RealizadoviaPS ECG RAIOX LAB RNM USG ECO DoPaciente TC"
+            ;
+    
+        
+            label,h1,h2,h3{
+                border:0px solid $cor_base;
+                vertical-align: bottom;
+                line-height: 2.4vw;
+                padding: 0;
+                margin: 0;
+                font-size: 0.8vw;
+            }
+
+            label:nth-of-type(1){ grid-area: RealizadoviaPS; }
+            label:nth-of-type(2){ grid-area: ECG;  }
+            label:nth-of-type(3){ grid-area: RAIOX; }
+            label:nth-of-type(4){ grid-area: LAB;   }
+            label:nth-of-type(5){ grid-area: RNM;   }
+            label:nth-of-type(6){ grid-area: USG;   }
+            label:nth-of-type(7){ grid-area: ECO;   }
+            label:nth-of-type(8){ grid-area: DoPaciente;   }
+            label:nth-of-type(9){ grid-area: TC;   }
+            }
+        
+
+
+    }
+}

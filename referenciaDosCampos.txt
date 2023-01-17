@@ -1,0 +1,10 @@
+atendimento
+nome do paciente
+data de nascimento
+sexo
+convenio
+acompanhante
+leito
+data de adminissão
+medico
+especialidade

@@ -1,0 +1,6 @@
+@import '../cores/cores';
+
+@keyframes MudandoDeCor {
+    from {background-color: White;}
+    to {background-color: $cor_base}
+}

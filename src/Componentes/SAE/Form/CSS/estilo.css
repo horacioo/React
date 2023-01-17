@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*$cor_base      :hsl(192, 74%, 20%);*/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/****aqui eu coloco as cores dos "sub-grupos" ******/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+/*****************************************************************/
+@-webkit-keyframes MudandoDeCor {
+  0% {
+    background-color: White;
+  }
+  100% {
+    background-color: hsl(197deg, 100%, 21%);
+    border: 1px solid #6b1e00;
+  }
+}
+@keyframes MudandoDeCor {
+  0% {
+    background-color: White;
+  }
+  100% {
+    background-color: hsl(197deg, 100%, 21%);
+    border: 1px solid #6b1e00;
+  }
+}
+/*$cor_base      :hsl(192, 74%, 20%);*/
+/***
+eu chamo os mixins e dentro do arquivo de mixins(mixins.scss) ele chama através do import o arquivo de layout(Grids/LayOut)
+***/
+button {
+  position: fixed;
+  bottom: 0;
+  padding: 0.7vw;
+  font-size: 1vw;
+  color: hsl(197deg, 100%, 21%);
+  background-color: #ffba9e;
+  border: none !important;
+  border-top-right-radius: 0.5vw;
+  padding-right: 1.7vw;
+}
+button:hover {
+  color: white;
+  background-color: #05b8ff;
+}
+
+#formularioCompleto {
+  border: none !important;
+}
+#formularioCompleto .linha {
+  border: 0px solid rgb(209, 209, 209);
+}
+#formularioCompleto .linha {
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+  /****************************************************************/
+}
+#formularioCompleto .linha .Masculino {
+  background-color: #b8f1ff;
+  margin-bottom: 0.4vw;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  padding: 0.7vw;
+}
+#formularioCompleto .linha .Masculino h2 {
+  margin: 0.4vw;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  display: inline-block;
+  font-size: 0.9vw;
+}
+#formularioCompleto .linha .Masculino h2::after {
+  content: ":";
+}
+#formularioCompleto .linha .Masculino label {
+  font-size: 0.8vw;
+  border: orange 0px solid;
+  padding: 0.2vw;
+  margin: 0.2vw;
+  display: inline-block;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  border: 0px solid red;
+  margin-bottom: 0.4vw;
+}
+#formularioCompleto .linha .Masculino label input[type=checkbox], #formularioCompleto .linha .Masculino label input[type=text], #formularioCompleto .linha .Masculino label input[type=date], #formularioCompleto .linha .Masculino label select {
+  border: 1px solid hsl(197deg, 100%, 21%);
+  margin-left: 0.2vw;
+  padding: 0.2vw;
+  color: hsl(197deg, 100%, 21%);
+}
+#formularioCompleto .linha .Masculino label input[type=checkbox] {
+  margin-left: 0.4vw;
+}
+#formularioCompleto .linha .Masculino label input[type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: hsl(197deg, 100%, 21%);
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+  -webkit-animation: MudandoDeCor 500ms forwards;
+          animation: MudandoDeCor 500ms forwards;
+}
+#formularioCompleto .linha .Masculino label input[type=checkbox]:after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: white;
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+}
+#formularioCompleto .linha .Feminino {
+  background-color: #fff0f9;
+  margin-bottom: 0.4vw;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  padding: 0.7vw;
+}
+#formularioCompleto .linha .Feminino h2 {
+  margin: 0.4vw;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  display: inline-block;
+  font-size: 0.9vw;
+}
+#formularioCompleto .linha .Feminino h2::after {
+  content: ":";
+}
+#formularioCompleto .linha .Feminino label {
+  font-size: 0.8vw;
+  border: orange 0px solid;
+  padding: 0.2vw;
+  margin: 0.2vw;
+  display: inline-block;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  border: 0px solid red;
+  margin-bottom: 0.4vw;
+}
+#formularioCompleto .linha .Feminino label input[type=checkbox], #formularioCompleto .linha .Feminino label input[type=text], #formularioCompleto .linha .Feminino label input[type=date], #formularioCompleto .linha .Feminino label select {
+  border: 1px solid hsl(197deg, 100%, 21%);
+  margin-left: 0.2vw;
+  padding: 0.2vw;
+  color: hsl(197deg, 100%, 21%);
+}
+#formularioCompleto .linha .Feminino label input[type=checkbox] {
+  margin-left: 0.4vw;
+}
+#formularioCompleto .linha .Feminino label input[type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: hsl(197deg, 100%, 21%);
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+  -webkit-animation: MudandoDeCor 500ms forwards;
+          animation: MudandoDeCor 500ms forwards;
+}
+#formularioCompleto .linha .Feminino label input[type=checkbox]:after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: white;
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+}
+#formularioCompleto .linha .All {
+  background-color: #fafdff;
+  margin-bottom: 0.4vw;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  padding: 0.7vw;
+}
+#formularioCompleto .linha .All h2 {
+  margin: 0.4vw;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  display: inline-block;
+  font-size: 0.9vw;
+}
+#formularioCompleto .linha .All h2::after {
+  content: ":";
+}
+#formularioCompleto .linha .All label {
+  font-size: 0.8vw;
+  border: orange 0px solid;
+  padding: 0.2vw;
+  margin: 0.2vw;
+  display: inline-block;
+  text-transform: capitalize;
+  color: hsl(197deg, 100%, 21%);
+  border: 0px solid red;
+  margin-bottom: 0.4vw;
+}
+#formularioCompleto .linha .All label input[type=checkbox], #formularioCompleto .linha .All label input[type=text], #formularioCompleto .linha .All label input[type=date], #formularioCompleto .linha .All label select {
+  border: 1px solid hsl(197deg, 100%, 21%);
+  margin-left: 0.2vw;
+  padding: 0.2vw;
+  color: hsl(197deg, 100%, 21%);
+}
+#formularioCompleto .linha .All label input[type=checkbox] {
+  margin-left: 0.4vw;
+}
+#formularioCompleto .linha .All label input[type=checkbox]:checked::after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: hsl(197deg, 100%, 21%);
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+  -webkit-animation: MudandoDeCor 500ms forwards;
+          animation: MudandoDeCor 500ms forwards;
+}
+#formularioCompleto .linha .All label input[type=checkbox]:after {
+  content: "";
+  display: block;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  background-color: white;
+  width: 1.4vw !important;
+  height: 1.4vw;
+  border-radius: 1vw;
+  top: -3px;
+  left: -4px;
+  position: relative;
+}
+
+/****
+aqui eu trago o arquivo que vai posicionar as linhas do formulário, o arquivo está em (CSS/Grids/LayOut/_LayOut.scss)
+****/
+#formularioCompleto {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 96vw !important;
+  border: 1px solid hsl(197deg, 100%, 21%);
+}/*# sourceMappingURL=estilo.css.map */

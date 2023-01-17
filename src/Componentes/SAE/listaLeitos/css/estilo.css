@@ -1,0 +1,44 @@
+/*$cor_base      :hsl(192, 74%, 20%);*/
+.listaLeitos {
+  border: 1px solid hsl(197deg, 100%, 21%);
+  padding: 1vw;
+  margin: 0.9vw;
+  border-radius: 0.5vw;
+  display: flow-root;
+}
+
+.listaLeitos li {
+  list-style: none;
+  border: 1px solid hsl(197deg, 100%, 21%);
+  margin: 0.3vw;
+  padding: 0.7vw;
+  border-radius: 0.5vw;
+  color: hsl(197deg, 100%, 21%);
+  width: 10.8576vw;
+  min-height: 10.8576vw;
+  float: left;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 1vw;
+}
+
+.listaLeitos li a {
+  font-size: 0.75vw;
+  text-decoration: none;
+  color: hsl(197deg, 100%, 21%);
+  /*border: 1px solid rgb(221, 221, 221);*/
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.SAENova {
+  border-color: hsl(197deg, 100%, 21%) !important;
+  background-color: #dbf5ff !important;
+}/*# sourceMappingURL=estilo.css.map */

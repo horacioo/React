@@ -1,0 +1,27 @@
+/*$cor_base      :hsl(192, 74%, 20%);*/
+$cor_base      :hsl(197, 100%, 21%);
+$CorInversa    : adjust-hue($cor_base, 180); 
+
+
+$complementar1  :  adjust-hue($cor_base, 10);
+$complementar2  :  adjust-hue($cor_base, 20);
+$complementar3  :  adjust-hue($cor_base, 30);
+$complementar4  :  adjust-hue($cor_base, 40);
+$complementar5  :  adjust-hue($cor_base, 50);
+$complementar6  :  adjust-hue($cor_base, 60);
+$complementar7  :  adjust-hue($cor_base, 70);
+$complementar8  :  adjust-hue($cor_base, 80);
+$complementar9  :  adjust-hue($cor_base, 90);
+$complementar10 :  adjust-hue($cor_base, 100);
+
+
+$complementar11 :  adjust-hue($cor_base, -10);
+$complementar12 :  adjust-hue($cor_base, -20);
+$complementar13 :  adjust-hue($cor_base, -30);
+$complementar14 :  adjust-hue($cor_base, -40);
+$complementar15 :  adjust-hue($cor_base, -50);
+$complementar16 :  adjust-hue($cor_base, -60);
+$complementar17 :  adjust-hue($cor_base, -70);
+$complementar18 :  adjust-hue($cor_base, -80);
+$complementar19 :  adjust-hue($cor_base, -90);
+$complementar20 :  adjust-hue($cor_base, -100);

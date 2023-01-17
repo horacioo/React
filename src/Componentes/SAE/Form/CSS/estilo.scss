@@ -1,0 +1,27 @@
+@import "mixins";
+@import "./cores/cores";
+
+/***
+eu chamo os mixins e dentro do arquivo de mixins(mixins.scss) ele chama através do import o arquivo de layout(Grids/LayOut)
+***/
+
+@include all();
+/****
+aqui eu trago o arquivo que vai posicionar as linhas do formulário, o arquivo está em (CSS/Grids/LayOut/_LayOut.scss)
+****/
+
+
+#formularioCompleto{
+
+
+position: relative;
+left:50%;
+transform: translateX(-50%);
+max-width: 96vw!important;
+border:1px solid $cor_base;
+
+.linha{
+
+}   
+
+}

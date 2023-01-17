@@ -1,0 +1,18 @@
+$variacaoTonalidade:70%;
+
+@import "./cores/cores";
+@import 'Grids/AntecedentesClinicos';
+@import 'Grids/ExamesGerais';
+@import 'Grids/HistoricoEnf';
+@import 'Grids/AlimentacaoPor';
+@import 'Grids/Intestinal';
+@import 'Grids/LayOut';
+
+@mixin DecoracaoBase($cor_base)
+{
+
+  
+}
+
+
+

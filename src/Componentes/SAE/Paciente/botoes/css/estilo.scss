@@ -1,0 +1,40 @@
+
+@import '../../../MAIN_CSS/_cores';
+
+#BlocoDeBotoes{
+    position: relative;
+    border:0px solid $cor_base;
+    overflow: auto;
+    height: auto;
+    display: block;
+    width:72vw;
+    left: 50%;
+    transform:translateX(-50%);
+    margin-bottom:1vw;
+        
+
+        button{
+        position: relative;  
+        background-color:lighten($cor_base,30);
+        display: inline-block;
+        margin-left: 1vw;
+        border-radius: 0.31vw;
+        color:white;
+        text-align: center;
+        
+            a{
+                text-decoration: none;
+                color:white
+            }
+        }
+
+
+        .fechaButton {display: none;}
+        .abreButton{  
+            display:inline-block; 
+            &:hover{background-color:lighten($CorInversa,30);}
+         }
+
+}
+
+

@@ -1,0 +1,44 @@
+.FormLogin{
+    border:1px solid rgb(34, 106, 162);
+    position: absolute;
+    width:50vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:18vw;
+    padding:1vw;
+}
+
+
+
+.FormLogin label{
+    border:1px solid rgb(34, 106, 162);
+    text-transform:uppercase;
+    padding:2vw;
+    position: relative;
+    width:92%;
+    display: inline-block;
+    margin-bottom: 0.5vw;
+    color:rgb(34, 106, 162);
+    font-size:1.2vw;
+}
+
+.FormLogin INPUT{
+    border:1px solid rgb(34, 106, 162);
+    padding:0.51vw;
+    width:80%;
+    font-size:1vw;
+    color:rgb(34, 106, 162);
+    margin-left: 1vw;
+    text-transform: uppercase;
+}
+
+.FormLogin button{
+    border:1px solid rgb(34, 106, 162);
+    width:50vw;
+    height:4vw;
+    font-size:1vw;
+    background-color:rgb(34, 106, 162);
+    color:white;
+    text-transform: uppercase;
+    }
